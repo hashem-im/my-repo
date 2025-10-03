@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Citizenship & Work Authorization — Imad Hashem</title>
+  <style>
+    :root{
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --accent:#0b5ed7;
+      --muted:#6b7280;
+      --success:#10b981;
+      --radius:12px;
+      --shadow: 0 8px 28px rgba(15,23,42,0.06);
+      --gap:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family: Inter, "Segoe UI", Roboto, system-ui, -apple-system, "Helvetica Neue", Arial;
+      margin:0;
+      background:var(--bg);
+      color:#0f172a;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:32px;
+    }
+
+    .wrap{
+      max-width:900px;
+      margin:0 auto;
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:24px;
+      box-shadow:var(--shadow);
+      border:1px solid rgba(15,23,42,0.04);
+      display:grid;
+      grid-template-columns: 1fr 320px;
+      gap:20px;
+      align-items:start;
+    }
+
+    @media (max-width:820px){
+      .card{ grid-template-columns: 1fr; }
+    }
+
+    .profile {
+      display:flex;
+      gap:18px;
+      align-items:flex-start;
+    }
+
+    .avatar {
+      width:96px;
+      height:96px;
+      border-radius:14px;
+      background:linear-gradient(180deg,var(--accent), #153d9a);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-weight:700;
+      font-size:28px;
+      box-shadow:0 6px 16px rgba(11,94,215,0.14);
+      flex-shrink:0;
+    }
+
+    .info h1{
+      margin:0;
+      font-size:1.45rem;
+      letter-spacing:0.2px;
+    }
+    .info .title{
+      margin-top:6px;
+      color:var(--muted);
+      font-weight:600;
+      text-transform:uppercase;
+      font-size:0.85rem;
+    }
+    .contact {
+      margin-top:12px;
+      color:var(--muted);
+      font-size:0.92rem;
+    }
+    .contact a{ color:var(--accent); text-decoration:none; }
+
+    /* Right column: badge + details */
+    .status {
+      background: linear-gradient(180deg,#fff,#fbfdff);
+      border-radius:10px;
+      padding:18px;
+      border:1px solid rgba(15,23,42,0.04);
+      box-shadow: 0 6px 20px rgba(11,94,215,0.04);
+    }
+    .badge {
+      display:flex;
+      gap:12px;
+      align-items:center;
+    }
+    .flag {
+      width:64px;
+      height:40px;
+      border-radius:6px;
+      overflow:hidden;
+      box-shadow:0 6px 14px rgba(15,23,42,0.06);
+      flex-shrink:0;
+      background:#fff;
+      display:inline-block;
+    }
+    .flag svg{ width:100%; height:100%; display:block; }
+
+    .status h2{
+      margin:0 0 6px 0;
+      font-size:1.05rem;
+      color:var(--accent);
+    }
+    .status p {
+      margin:6px 0 12px 0;
+      color:var(--muted);
+    }
+
+    .pill {
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+      padding:10px 12px;
+      border-radius:999px;
+      font-weight:600;
+      background:linear-gradient(90deg,var(--success), #0ea36a);
+      color:white;
+      box-shadow:0 6px 18px rgba(16,185,129,0.14);
+      font-size:0.95rem;
+    }
+
+    .details {
+      margin-top:14px;
+      background:#fff;
+      border-radius:8px;
+      padding:12px;
+      border:1px dashed rgba(15,23,42,0.04);
+      font-size:0.95rem;
+      color:var(--muted);
+    }
+
+    .actions{
+      margin-top:16px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
+    button{
+      cursor:pointer;
+      border:0;
+      padding:10px 14px;
+      border-radius:10px;
+      font-weight:600;
+      background:transparent;
+    }
+
+    .btn-copy{
+      background:#eef6ff;
+      color:var(--accent);
+      border:1px solid rgba(11,94,215,0.08);
+    }
+    .btn-print{
+      background:#f3f8f4;
+      color:#0b8043;
+      border:1px solid rgba(11,94,215,0.04);
+    }
+
+    .note{
+      margin-top:12px;
+      font-size:0.88rem;
+      color:var(--muted);
+    }
+
+    /* small helper */
+    .muted { color:var(--muted); font-size:0.95rem; }
+
+  </style>
+</head>
+<body>
+  <div class="wrap" role="main">
+    <div class="card" aria-labelledby="profile-title">
+      <div>
+        <div class="profile" id="profile-title">
+          <div class="avatar" aria-hidden="true">IH</div>
+          <div class="info">
+            <h1>Imad Hashem</h1>
+            <div class="title">Sr Mgr IT — Information Technology</div>
+            <div class="contact">
+              Wilmington, NC, USA • <a href="mailto:imad.hashem1@gmail.com">imad.hashem1@gmail.com</a><br>
+              <a href="https://www.linkedin.com/in/imad-hashem-30991854" target="_blank" rel="noopener">linkedin.com/in/imad-hashem-30991854</a>
+            </div>
+          </div>
+        </div>
+
+        <section style="margin-top:18px">
+          <h3 style="margin:0;color:#0b1220">Work Authorization</h3>
+          <p class="muted" style="margin-top:8px">
+            I am a <strong>citizen of the United States</strong> and <strong>do not require any sponsorship</strong> for employment authorization.
+            Available for immediate consideration for positions that require U.S. work authorization.
+          </p>
+
+          <div class="details" id="plainText">
+            Imad Hashem — U.S. Citizen. Does not require sponsorship for employment.
+          </div>
+
+          
+        </section>
+      </div>
+
+      <aside class="status" aria-labelledby="status-heading">
+        <div class="badge" id="status-heading">
+          <div class="flag" aria-hidden="true">
+            <!-- Simple SVG US flag (decorative) -->
+            <svg viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
+              <rect width="60" height="40" fill="#b22234"/>
+              <g fill="#fff">
+                <rect x="0" y="6" width="60" height="2"/>
+                <rect x="0" y="12" width="60" height="2"/>
+                <rect x="0" y="18" width="60" height="2"/>
+                <rect x="0" y="24" width="60" height="2"/>
+              </g>
+              <rect width="26" height="16" fill="#3c3b6e"/>
+              <!-- simplified stars -->
+              <g fill="#fff" transform="translate(2,2)" font-size="2">
+                <text x="0" y="3">*</text><text x="4" y="3">*</text><text x="8" y="3">*</text><text x="12" y="3">*</text>
+                <text x="2" y="6">*</text><text x="6" y="6">*</text><text x="10" y="6">*</text>
+              </g>
+            </svg>
+          </div>
+          <div style="flex:1">
+            <h2 style="margin:0">U.S. Citizen</h2>
+            <p style="margin:6px 0 0" class="muted">No visa sponsorship required for employment.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:14px">
+          <div class="pill" role="status" aria-live="polite">No Sponsorship Required</div>
+        </div>
+
+        <div style="margin-top:14px" class="muted">
+          Employers: willing to provide documentation and complete necessary forms on request.
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  
+</body>
+</html>
+

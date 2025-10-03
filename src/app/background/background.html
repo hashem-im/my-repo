@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Background</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f9;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    header p {
+      margin: 10px 0 0;
+      font-size: 1rem;
+      color: #ddd;
+    }
+    .timeline {
+      position: relative;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .timeline::after {
+      content: "";
+      position: absolute;
+      width: 4px;
+      background-color: #2c3e50;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -2px;
+    }
+    .timeline-item {
+      padding: 20px 30px;
+      position: relative;
+      width: 50%;
+    }
+    .timeline-item.left {
+      left: 0;
+    }
+    .timeline-item.right {
+      left: 50%;
+    }
+    .timeline-item::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      right: -10px;
+      background-color: #2c3e50;
+      border: 3px solid #fff;
+      top: 30px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .timeline-item.right::after {
+      left: -10px;
+    }
+    .timeline-content {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .timeline-content h3 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+    .timeline-content p {
+      margin: 10px 0 0;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      font-size: 0.85rem;
+      color: #666;
+    }
+    @media screen and (max-width: 768px) {
+      .timeline::after {
+        left: 20px;
+      }
+      .timeline-item {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 25px;
+      }
+      .timeline-item.right {
+        left: 0;
+      }
+      .timeline-item::after {
+        left: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Background</h1>
+    <p>A journey from Lebanon to leadership in IT</p>
+  </header>
+
+  <div class="timeline">
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <h3>1982 – Immigration</h3>
+        <p>Born in Lebanon, immigrated to the United States due to the war and instability in the region.</p>
+      </div>
+    </div>
+    <div class="timeline-item right">
+      <div class="timeline-content">
+        <h3>1984 – High School</h3>
+        <p>Graduated from <strong>East Surry High School</strong> in Pilot Mountain, NC.</p>
+      </div>
+    </div>
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <h3>NC State University</h3>
+        <p>Initially majored in <strong>Mechanical Engineering</strong>, later discovered a strength in logic and switched to <strong>Computer Science</strong>.</p>
+      </div>
+    </div>
+    <div class="timeline-item right">
+      <div class="timeline-content">
+        <h3>First Job – Carolina Freight Carrier</h3>
+        <p>Worked as a <strong>Mainframe Developer</strong> for 5 years until the company was acquired by ABF, leading to the data center closing.</p>
+      </div>
+    </div>
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <h3>SIECOR / Corning</h3>
+        <p>Joined as a developer for corporate and plant systems, later moving into data warehousing and <strong>database administration</strong>.</p>
+      </div>
+    </div>
+    <div class="timeline-item right">
+      <div class="timeline-content">
+        <h3>PPD Career</h3>
+        <p>Joined <strong>PPD</strong> as a Database Administrator, promoted to <strong>Manager</strong> and later <strong>Senior Manager</strong>, leading global teams and IT strategy.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 My Life Journey
+  </footer>
+</body>
+</html>

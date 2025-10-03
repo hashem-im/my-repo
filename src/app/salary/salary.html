@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salary Requirements</title>
+  <style>
+    body {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      background: #fff8e1;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .card {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      max-width: 500px;
+      text-align: center;
+      animation: pop 0.7s ease-out;
+    }
+    @keyframes pop {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    h1 {
+      color: #ff5722;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .money {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #4caf50;
+      margin: 20px 0;
+      animation: bounce 1.2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    p {
+      font-size: 1.1rem;
+      margin: 12px 0;
+      color: #555;
+    }
+    .footer {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Salary Requirements 💰</h1>
+    <div class="money">$$$</div>
+    <p>
+      Let’s keep it simple:  
+      I’m looking for a salary that keeps my fridge full,  
+      my coffee strong, and my WiFi blazing fast. ☕📶
+    </p>
+    <p>
+      Translation: <strong>“Competitive compensation, aligned with experience.”</strong>
+    </p>
+    <div class="footer">
+      * Also open to being paid in pizza slices on Fridays 🍕
+    </div>
+  </div>
+</body>
+</html>
+
