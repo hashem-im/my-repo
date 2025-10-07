@@ -1,0 +1,21 @@
+.about-list {
+    list-style:circle;
+}
+
+.about-list li {
+display:block;
+padding: 0.3rem;
+}
+
+
+.about-list li a {
+  padding: 0.4rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.about-list li a.active {
+  background: #1976d2;
+  color: white;
+  border-radius: 4px;
+}

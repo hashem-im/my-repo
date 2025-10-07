@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imad Hashem - Profile</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7fb;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .profile-card {
+      max-width: 700px;
+      margin: 60px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      text-align: center;
+    }
+
+    .profile-card h1 {
+      font-size: 2rem;
+      margin-bottom: 5px;
+      color: #1976d2;
+    }
+
+    .profile-card h2 {
+      font-size: 1.2rem;
+      margin: 0;
+      color: #444;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .profile-card p {
+      margin: 8px 0;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .contact {
+      margin-top: 20px;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 5px 10px;
+      text-decoration: none;
+      color: #1976d2;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .contact a:hover {
+      color: #0d47a1;
+    }
+
+    .divider {
+      height: 2px;
+      background: #1976d2;
+      margin: 20px auto;
+      width: 60px;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-card" >
+    <h1>{{ aboutItem[0].name }} </h1> 
+    <h2>{{ aboutItem[0].title }}</h2>
+    <div class="divider"></div>
+    <p><strong>{{ aboutItem[0].department }}</strong></p>
+    <p>{{ aboutItem[0].location }}</p>
+    <div class="contact">
+      <p><a href="mailto:{{ aboutItem[0].email }}">{{ aboutItem[0].email }}</a></p>
+      <p><a href="{{ aboutItem[0].linkedIn }}" target="_blank">LinkedIn Profile</a></p>
+    </div>
+  </div>
+</body>
+</html>
+

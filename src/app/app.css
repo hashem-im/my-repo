@@ -1,0 +1,22 @@
+.grid-container {
+  display: grid;
+  grid-template-rows: 80px 1fr 60px; /* header, content, footer */
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+  height: 100vh; /* full screen */
+}
+
+/* Assign areas */
+.grid-header {
+  grid-area: header;
+}
+
+.grid-content {
+  grid-area: content;
+}
+
+.grid-footer {
+  grid-area: footer;
+}

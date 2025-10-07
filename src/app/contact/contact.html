@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Information</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #ffffff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 30px 40px;
+      max-width: 420px;
+      text-align: center;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+      animation: fadeIn 0.8s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .name {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 8px;
+    }
+    .title {
+      font-size: 1.1rem;
+      color: #00796b;
+      margin-bottom: 20px;
+    }
+    .info {
+      font-size: 1rem;
+      margin: 10px 0;
+      color: #444;
+    }
+    a {
+      color: #1976d2;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .icon {
+      margin-right: 8px;
+      color: #00796b;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="name">Imad Hashem</div>
+    <div class="title">SR MGR IT | Information Technology</div>
+    <div class="info">📍 Wilmington, NC, USA</div>
+    <div class="info">📞 <a href="tel:+19999999999">(999) 999-9999</a></div>
+    <div class="info">✉️ <a href="mailto:imad.hashem1@gmail.com">imad.hashem1@gmail.com</a></div>
+    <div class="info">🔗 <a href="https://www.linkedin.com/in/imad-hashem-30991854" target="_blank">LinkedIn Profile</a></div>
+  </div>
+</body>
+</html>
